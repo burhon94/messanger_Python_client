@@ -6,6 +6,8 @@
 
 ####3) Can use pyuic6 or (pyuic5) file.ui
 ##### this command compile ui file to python file on command board
+`pyuic5 clientUI.ui`
 
 ####4) Can use pyuic6 or (pyuic5) file.ui -o pythonFile.py
 ##### this command compile iu file to python file and set logout to file
+`pyuic5 clientUI.ui -o clientUI.py`
