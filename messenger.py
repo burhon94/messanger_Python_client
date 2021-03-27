@@ -35,7 +35,7 @@ class ExampleApp(QtWidgets.QMainWindow, Ui_MainWindow):
     def get_msgs(self):
         try:
             resp = requests.get(
-                'http://192.168.194.111:5000/get/msgs',
+                'https://dry-forest-11328.herokuapp.com/get/msgs',
                 params={'after': self.after}
             )
 
@@ -56,7 +56,7 @@ class ExampleApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
         try:
             resp = requests.post(
-                'http://192.168.194.111:5000/send/msg',
+                'https://dry-forest-11328.herokuapp.com/send/msg',
                 json={
                     'name': name,
                     'text': text
